@@ -28,6 +28,10 @@ body {
     margin: 0 auto;
 }
 
+.mt-2 {
+    margin-top: 2rem;
+}
+
 header h1 {
     font-family: var(--font-title);
     font-size: 2em;
@@ -67,4 +71,41 @@ header p {
 nav li:hover {
     background: var(--emphasis-color);
     color: #fff;
+}
+
+.featured {
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    display: grid;
+    grid-template: 100% / 60% 40%;
+}
+
+.content {
+    font-family: var(--font-body);
+}
+
+.content-type {
+    color: #9d9b9b;
+    font-size: 1em;
+    font-weight: var(--weight-subtitle);
+}
+
+.content-title {
+    color: var(--emphasis-color);
+    font-weight: var(--weight-body-title);
+}
+
+.content-description {
+    margin-top: 0.5rem;
+    color: #636060;
+    font-size: 1rem;
+    font-weight: var(--weigth-body);
+    text-align: justify-all;
+    line-height: 20px;
+}
+
+.media > * {
+    width: 100%;
+    object-fit: cover;
 }
