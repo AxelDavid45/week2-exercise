@@ -4,17 +4,21 @@
     --font-title: 'Staatliches', cursive;
     --font-body: 'Lato', sans-serif;
     --weight-subtitle: 300;
+    --weight-body-title: 700;
     --weigth-body: 400;
 }
 html {
     box-sizing: border-box;
 }
 *, *:before, *:after {
+    margin: 0;
+    padding: 0;
     box-sizing: inherit;
 }
 
 body {
     background: var(--background);
+    font-family: sans-serif;
     font-size: 16px;
 }
 
@@ -27,10 +31,40 @@ body {
 header h1 {
     font-family: var(--font-title);
     font-size: 2em;
-    margin-top: 30px;
+    margin-top: 2rem;
     line-height: 0;
 }
 header p {
     font-family: var(--font-body);
     font-weight: var(--weight-subtitle);
+}
+
+/*nav styles*/
+.rounded {
+    border-radius: 10px;
+}
+.nav {
+    width: 100%;
+    display: grid;
+    grid-template: 100% / repeat(5, 1fr);
+    margin-top: 1rem;
+    background: #d5d5d5;
+}
+
+.nav li {
+    border-radius: 10px;
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-body);
+    font-weight: var(--weight-body-title);
+    color: var(--emphasis-color);
+    transition: .2s background;
+}
+
+nav li:hover {
+    background: var(--emphasis-color);
+    color: #fff;
 }
