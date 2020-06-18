@@ -7,9 +7,11 @@
     --weight-body-title: 700;
     --weigth-body: 400;
 }
+
 html {
     box-sizing: border-box;
 }
+
 *, *:before, *:after {
     margin: 0;
     padding: 0;
@@ -38,6 +40,7 @@ header h1 {
     margin-top: 2rem;
     line-height: 0;
 }
+
 header p {
     font-family: var(--font-body);
     font-weight: var(--weight-subtitle);
@@ -47,6 +50,7 @@ header p {
 .rounded {
     border-radius: 10px;
 }
+
 .nav {
     width: 100%;
     display: grid;
@@ -73,6 +77,7 @@ nav li:hover {
     color: #fff;
 }
 
+/*featured */
 .featured {
     width: 100%;
     background: #fff;
@@ -81,22 +86,23 @@ nav li:hover {
     grid-template: 100% / 60% 40%;
 }
 
-.content {
+.featured-content {
     font-family: var(--font-body);
+    margin: 10px;
 }
 
-.content-type {
+.featured--content-type {
     color: #9d9b9b;
     font-size: 1em;
     font-weight: var(--weight-subtitle);
 }
 
-.content-title {
+.featured--content-title {
     color: var(--emphasis-color);
     font-weight: var(--weight-body-title);
 }
 
-.content-description {
+.featured--content-description {
     margin-top: 0.5rem;
     color: #636060;
     font-size: 1rem;
@@ -105,7 +111,64 @@ nav li:hover {
     line-height: 20px;
 }
 
-.media > * {
+.featured--media > * {
     width: 100%;
     object-fit: cover;
 }
+
+/*news articles*/
+.news {
+    margin-top: 2rem;
+    padding: 20px;
+    background: #fff;
+}
+
+.news-article {
+    display: grid;
+    margin: 10px;
+    grid-template: 100% / 20% 80%;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.news-article:last-child {
+    border-bottom: none;
+}
+
+.news--article-info {
+    font-family: var(--font-body);
+    font-weight: var(--weight-subtitle);
+    font-size: 0.9rem;
+    color: #636060;
+}
+
+.article-info-author span {
+    color: var(--emphasis-color);
+}
+
+.article-info-comments {
+    font-size: 0.7rem;
+}
+
+.news--article-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-description-title {
+    color: var(--emphasis-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.article-description-content {
+    color: #636060;
+    margin-bottom: 1rem;
+}
+
+.article-description-footer {
+    font-size: 0.9rem;
+    font-weight: var(--weight-body-title);
+    color: var(--emphasis-color);
+    margin-bottom: 1rem;
+}
+
