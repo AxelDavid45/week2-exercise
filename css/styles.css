@@ -1,0 +1,17 @@
+:root {
+    --background: #f4f4f4;
+    --emphasis-color: #c84451;
+    --font-title: 'Staatliches', cursive;
+    --font-body: 'Lato', sans-serif;
+    --weight-subtitle: 300;
+    --weigth-body: 400;
+}
+body {
+    background: var(--background);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
