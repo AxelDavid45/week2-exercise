@@ -186,13 +186,25 @@ nav li:hover {
 }
 
 /*footer*/
-footer  {
+footer {
     display: flex;
     justify-content: space-between;
 }
 
 footer .icons {
     font-size: 1.5rem;
+}
+
+.fb-icon {
+    color: #3b5998;
+}
+
+.linkedin-icon {
+    color: #0077b5;
+}
+
+.youtube-icon {
+    color: #ff0000;
 }
 
 footer .copy {
