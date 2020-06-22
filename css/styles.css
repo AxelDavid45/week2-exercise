@@ -64,7 +64,7 @@ header p {
     background: #d5d5d5;
 }
 
-.nav li {
+.nav__item {
     border-radius: 10px;
     list-style: none;
     padding: 15px;
@@ -77,10 +77,11 @@ header p {
     transition: .2s background;
 }
 
-nav li:hover {
+.nav__item:hover {
     background: var(--emphasis-color);
     color: #fff;
 }
+
 
 /*featured */
 .featured {
