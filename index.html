@@ -152,10 +152,17 @@
             <i style="color: #ff0000" class="fab fa-youtube"></i>
         </div>
         <div class="copy">
-            &copy; 2020 All rights reserved
+            &copy; <span id="footer-year"></span> All rights reserved
         </div>
     </footer>
 </main>
 
+<script>
+    const footerYear = document.getElementById('footer-year');
+    const date = new Date().getFullYear();
+    //Insert the year
+    footerYear.innerText = date.toString();
+
+</script>
 </body>
 </html>
