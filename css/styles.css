@@ -100,23 +100,23 @@ header p {
     grid-template: 100% / 40% 60%;
 }
 
-.featured-content {
+.featured__content {
     font-family: var(--font-body);
     margin: 10px;
 }
 
-.featured--content-type {
+.content__type {
     color: #9d9b9b;
     font-size: 1em;
     font-weight: var(--weight-subtitle);
 }
 
-.featured--content-title {
+.content__title {
     color: var(--emphasis-color);
     font-weight: var(--weight-body-title);
 }
 
-.featured--content-description {
+.content__description {
     margin-top: 0.5rem;
     color: var(--description-color);;
     font-size: 1rem;
