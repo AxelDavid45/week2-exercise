@@ -1,6 +1,7 @@
 :root {
     --background: #f4f4f4;
     --emphasis-color: #c84451;
+    --description-color: #636060;
     --font-title: 'Staatliches', cursive;
     --font-body: 'Lato', sans-serif;
     --weight-subtitle: 300;
@@ -116,7 +117,7 @@ nav li:hover {
 
 .featured--content-description {
     margin-top: 0.5rem;
-    color: #636060;
+    color: var(--description-color);;
     font-size: 1rem;
     font-weight: var(--weigth-body);
     text-align: justify-all;
@@ -150,7 +151,7 @@ nav li:hover {
     font-family: var(--font-body);
     font-weight: var(--weight-subtitle);
     font-size: 0.9rem;
-    color: #636060;
+    color: var(--description-color);;
 }
 
 .article-info-author span {
@@ -173,7 +174,7 @@ nav li:hover {
 }
 
 .article-description-content {
-    color: #636060;
+    color: var(--description-color);;
     margin-bottom: 1rem;
 }
 
