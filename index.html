@@ -5,7 +5,11 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>Exercise</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4bc87b4ae7.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header class="container">
@@ -14,23 +18,148 @@
 </header>
 <nav class="container">
     <ul class="nav rounded">
-        <li class="nav-item">
+        <li class="nav__item">
             Home
         </li>
-        <li class="nav-item">
+        <li class="nav__item">
             About
         </li>
-        <li class="nav-item">
+        <li class="nav__item">
             Portfolio
         </li>
-        <li class="nav-item">
+        <li class="nav__item">
             Blog
         </li>
-        <li class="nav-item">
+        <li class="nav__item">
             Contact
         </li>
     </ul>
 </nav>
 
+<main class="mt-2">
+    <section class="container">
+        <article class="rounded featured">
+            <div class="featured__content">
+                <h3 class="content__type">Latest</h3>
+                <h2 class="content__title">Crea un sitio web usando HTML5</h2>
+                <p class="content__description">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing
+                    elit. Ab alias aut
+                    corporis
+                    deserunt distinctio dolor dolore doloremque dolorum impedit, ipsa libero
+                    perspiciatis quibusdam sequi sint unde voluptate voluptates. Et, quibusdam.</p>
+            </div>
+            <div class="featured__media">
+                <img
+                    src="https://alejandrojs.files.wordpress.com/2019/09/screenshot_21.png?w=640"
+                    alt="image">
+            </div>
+        </article>
+    </section>
+    <section class="container news rounded">
+        <article class="news__article">
+            <div class="article__info">
+                <h4>16 de Junio de 2020</h4>
+                <h4>By <span class="info__author">Axel Espinosa</span></h4>
+                <h4 class="info__comments">3 comments</h4>
+            </div>
+            <div class="article__description">
+                <h2 class="description__title">Las bondades de HTML5</h2>
+                <p class="description__content">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Corporis culpa perferendis reiciendis temporibus voluptatibus!
+                    Cum dolorem, ducimus enim saepe veniam voluptates voluptatibus? Deserunt
+                    expedita facilis inventore maiores nihil quaerat ut.</p>
+                <p class="description__footer">Read more...</p>
+            </div>
+        </article>
+        <article class="news__article">
+            <div class="article__info">
+                <h4>16 de Junio de 2020</h4>
+                <h4>By <span class="info__author">Axel Espinosa</span></h4>
+                <h4 class="info__comments">3 comments</h4>
+            </div>
+            <div class="article__description">
+                <h2 class="description__title">Las bondades de HTML5</h2>
+                <p class="description__content">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Corporis culpa perferendis reiciendis temporibus voluptatibus!
+                    Cum dolorem, ducimus enim saepe veniam voluptates voluptatibus? Deserunt
+                    expedita facilis inventore maiores nihil quaerat ut.</p>
+                <p class="description__footer">Read more...</p>
+            </div>
+        </article>
+        <article class="news__article">
+            <div class="article__info">
+                <h4>16 de Junio de 2020</h4>
+                <h4>By <span class="info__author">Axel Espinosa</span></h4>
+                <h4 class="info__comments">3 comments</h4>
+            </div>
+            <div class="article__description">
+                <h2 class="description__title">Las bondades de HTML5</h2>
+                <p class="description__content">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Corporis culpa perferendis reiciendis temporibus voluptatibus!
+                    Cum dolorem, ducimus enim saepe veniam voluptates voluptatibus? Deserunt
+                    expedita facilis inventore maiores nihil quaerat ut.</p>
+                <p class="description__footer">Read more...</p>
+            </div>
+        </article>
+        <article class="news__article">
+            <div class="article__info">
+                <h4>16 de Junio de 2020</h4>
+                <h4>By <span class="info__author">Axel Espinosa</span></h4>
+                <h4 class="info__comments">3 comments</h4>
+            </div>
+            <div class="article__description">
+                <h2 class="description__title">Las bondades de HTML5</h2>
+                <p class="description__content">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Corporis culpa perferendis reiciendis temporibus voluptatibus!
+                    Cum dolorem, ducimus enim saepe veniam voluptates voluptatibus? Deserunt
+                    expedita facilis inventore maiores nihil quaerat ut.</p>
+                <p class="description__footer">Read more...</p>
+            </div>
+        </article>
+    </section>
+
+    <section class="container mt-2">
+        <article class="rounded featured-inverted">
+            <div class="featured__media">
+                <img
+                    src="https://alejandrojs.files.wordpress.com/2019/09/screenshot_21.png?w=640"
+                    alt="image">
+            </div>
+            <div class="featured__content">
+                <h3 class="content__type">World</h3>
+                <h2 class="content__title">NodeJS</h2>
+                <p class="content__description">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing
+                    elit. Ab alias aut
+                    corporis
+                    deserunt distinctio dolor dolore doloremque dolorum impedit, ipsa libero
+                    perspiciatis quibusdam sequi sint unde voluptate voluptates. Et, quibusdam.</p>
+            </div>
+        </article>
+    </section>
+
+    <footer class="mt-2 container">
+        <div class="icons">
+            <a href="https://twitter.com/E_Axel45">
+                <i class="twitter-icon fab fa-twitter"></i>
+            </a>
+            <i class="fb-icon fab fa-facebook"></i>
+            <i class="linkedin-icon fab fa-linkedin"></i>
+            <i class="youtube-icon fab fa-youtube"></i>
+        </div>
+        <div class="copy">
+            &copy; <span id="footer-year"></span> All rights reserved
+        </div>
+    </footer>
+</main>
+
+<script>
+    const footerYear = document.getElementById('footer-year');
+    const date = new Date().getFullYear();
+    //Insert the year
+    footerYear.innerText = date.toString();
+
+</script>
 </body>
 </html>
