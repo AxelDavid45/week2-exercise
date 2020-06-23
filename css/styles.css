@@ -144,7 +144,7 @@ header p {
     border-bottom: 1px solid #b3b3b3;
 }
 
-.news-article:last-child {
+.news__article:last-child {
     border-bottom: none;
 }
 
