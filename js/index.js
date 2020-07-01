@@ -10,9 +10,8 @@ footerYear.innerText = date.toString();
 const navigation = new Navigation()
 
 const fillElementsList = () => {
-    let navElements = nav.children;
-    let arrayElements = Array.from(navElements);
-    let ids = arrayElements.map(element => element.id);
+    let navElements = [...nav.children];
+    let ids = navElements.map(element => element.id);
     console.log(ids);
 }
 
