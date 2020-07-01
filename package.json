@@ -1,0 +1,23 @@
+{
+  "name": "week2-frontendexercise",
+  "version": "1.0.0",
+  "description": "PlatziMaster week 2 exercise",
+  "main": "index.js",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxelDavid45/week2-exercise.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AxelDavid45/week2-exercise/issues"
+  },
+  "homepage": "https://github.com/AxelDavid45/week2-exercise#readme"
+}
