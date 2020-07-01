@@ -1,8 +1,12 @@
 class Navigation {
 
-    constructor() {
-        this.elements = [];
+    constructor(elements) {
+        this.elements = elements;
         this.clickCounter = [];
+        //Fill the array with zeros to start adding the times you clicked
+        for(let i = 0; i < elements.length; i++) {
+            this.clickCounter[i] = 0;
+        }
     }
 
     searchIndexOfElement(element) {

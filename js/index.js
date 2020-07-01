@@ -1,4 +1,5 @@
 import Navigation from "./Navigation.js";
+
 const nav = document.getElementById('nav');
 const footerYear = document.getElementById('footer-year');
 
@@ -6,13 +7,17 @@ const date = new Date().getFullYear();
 //Insert the year
 footerYear.innerText = date.toString();
 
-//Handle the click events in nav
-const navigation = new Navigation()
-
+//Creates an array with the ids
 const fillElementsList = () => {
     let navElements = [...nav.children];
-    let ids = navElements.map(element => element.id);
-    console.log(ids);
+    return navElements.map(element => element.id);
 }
 
-nav.addEventListener('click', fillElementsList);
+const navigation = new Navigation(fillElementsList());
+
+//Handle the click events in nav
+const handleNavClick = evt => {
+    navigation.renderMessage(evt.target.id);
+}
+
+nav.addEventListener('click', handleNavClick);
