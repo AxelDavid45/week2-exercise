@@ -1,10 +1,13 @@
 class Navigation {
-    constructor(elements) {
-        this.elements = elements;
+    constructor(elements = null) {
+        this.elements = elements === null ? []: elements;
         this.clickCounter = [];
         //Fill the array with zeros to start adding the times you clicked
-        for (let i = 0; i < elements.length; i++) {
-            this.clickCounter[i] = 0;
+        if(this.elements > 0) {
+            for (let i = 0; i < elements.length; i++) {
+                this.clickCounter[i] = 0;
+            }
+
         }
     }
 
