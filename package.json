@@ -6,7 +6,9 @@
   "dependencies": {
     "live-server": "^1.2.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^26.1.0"
+  },
   "scripts": {
     "start": "live-server"
   },
