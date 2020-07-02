@@ -3,7 +3,7 @@ class Navigation {
         this.elements = elements;
         this.clickCounter = [];
         //Fill the array with zeros to start adding the times you clicked
-        for(let i = 0; i < elements.length; i++) {
+        for (let i = 0; i < elements.length; i++) {
             this.clickCounter[i] = 0;
         }
     }
@@ -22,6 +22,13 @@ class Navigation {
         let elementIndex = this.searchIndexOfElement(element);
         this.clickCounter[elementIndex] += 1;
         console.log(`ID: ${this.elements[elementIndex]} Count: ${this.clickCounter[elementIndex]}`);
+        this.changeColor(element);
+    }
+
+    changeColor(element) {
+        let elementToPaint = document.getElementById(element);
+        let color = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
+        elementToPaint.style.background = color;
     }
 
 }
