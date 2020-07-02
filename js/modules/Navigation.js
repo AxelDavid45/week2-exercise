@@ -1,5 +1,4 @@
 class Navigation {
-
     constructor(elements) {
         this.elements = elements;
         this.clickCounter = [];

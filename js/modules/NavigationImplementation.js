@@ -1,16 +1,23 @@
 import Navigation from "./Navigation.js";
-const nav = document.getElementById('nav');
-//Creates an array with the ids
-const fillElementsList = () => {
-    let navElements = [...nav.children];
-    return navElements.map(element => element.id);
+class NavigationImplementation {
+    constructor() {
+        this.navContainer = document.getElementById('nav');
+        this.navigation = new Navigation(this.fillElementList());
+        this.handleNavClicks = this.handleNavClicks.bind(this);
+        this.triggerEvent();
+    }
+
+    fillElementList() {
+        this.navElements = [...this.navContainer.children];
+        return this.navElements.map(element => element.id);
+    }
+
+    triggerEvent() {
+        this.navContainer.addEventListener('click', this.handleNavClicks);
+    }
+
+    handleNavClicks(evt) {
+        this.navigation.renderMessage(evt.target.id);
+    }
 }
-
-const navigation = new Navigation(fillElementsList());
-
-//Handle the click events in nav
-const handleNavClick = evt => {
-    navigation.renderMessage(evt.target.id);
-}
-
-nav.addEventListener('click', handleNavClick);
+export default NavigationImplementation;
