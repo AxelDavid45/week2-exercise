@@ -17,7 +17,8 @@ class NavigationImplementation {
     }
 
     handleNavClicks(evt) {
-        this.navigation.renderMessage(evt.target.id);
+        let message =  this.navigation.renderMessage(evt.target.id);
+        console.log(message);
     }
 }
 export default NavigationImplementation;
