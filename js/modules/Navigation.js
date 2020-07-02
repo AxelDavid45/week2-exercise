@@ -23,7 +23,7 @@ class Navigation {
     renderMessage(element) {
         let elementIndex = this.searchIndexOfElement(element);
         this.clickCounter[elementIndex] += 1;
-        // this.changeColor(element);
+        this.changeColor(element);
         return `ID: ${this.elements[elementIndex]} Count: ${this.clickCounter[elementIndex]}`;
     }
 
