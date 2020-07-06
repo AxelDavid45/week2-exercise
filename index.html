@@ -17,20 +17,20 @@
     <p>Página creada con HTML5</p>
 </header>
 <nav class="container">
-    <ul class="nav rounded">
-        <li class="nav__item">
+    <ul class="nav rounded" id="nav">
+        <li id="home" class="nav__item">
             Home
         </li>
-        <li class="nav__item">
+        <li id="about" class="nav__item">
             About
         </li>
-        <li class="nav__item">
+        <li id="portfolio" class="nav__item">
             Portfolio
         </li>
-        <li class="nav__item">
+        <li id="blog" class="nav__item">
             Blog
         </li>
-        <li class="nav__item">
+        <li id="contact" class="nav__item">
             Contact
         </li>
     </ul>
@@ -49,8 +49,8 @@
                     deserunt distinctio dolor dolore doloremque dolorum impedit, ipsa libero
                     perspiciatis quibusdam sequi sint unde voluptate voluptates. Et, quibusdam.</p>
             </div>
-            <div class="featured__media">
-                <img
+            <div class="featured__media" id="composed-father">
+                <img id="composed-event"
                     src="https://alejandrojs.files.wordpress.com/2019/09/screenshot_21.png?w=640"
                     alt="image">
             </div>
@@ -154,12 +154,7 @@
     </footer>
 </main>
 
-<script>
-    const footerYear = document.getElementById('footer-year');
-    const date = new Date().getFullYear();
-    //Insert the year
-    footerYear.innerText = date.toString();
-
-</script>
+<script type="module" src="js/index.js"></script>
+<!--<script type="module" src="js/modules/NavigationImple/mentation.js"></script>-->
 </body>
 </html>
